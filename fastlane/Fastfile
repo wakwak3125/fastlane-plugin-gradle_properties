@@ -1,6 +1,6 @@
 lane :test do
   value = gradle_properties(
-    property_name: "APP_VERSION_NAME"
+    property_name: "SAMPLE_PROPERTY"
   )
   p value
 end

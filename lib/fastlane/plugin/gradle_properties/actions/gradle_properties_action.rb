@@ -1,14 +1,14 @@
 require 'fastlane/action'
-require 'java-properties'
 require_relative '../helper/gradle_properties_helper'
 
 module Fastlane
   module Actions
     class GradlePropertiesAction < Action
       def self.run(params)
-        properties = JavaProperties.load(params[:path])
-        value = properties[params[:property_name].to_sym]
-        return value
+        Helper::GradlePropertiesHelper.load_property(
+          params[:path],
+          params[:property_name].to_sym
+        )
       end
 
       def self.description
