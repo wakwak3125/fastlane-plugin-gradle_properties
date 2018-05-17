@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email         = 'rsakaguchi3125@gmail.com'
 
   spec.summary       = 'Read properties in your Fastfile easily'
-  # spec.homepage      = "https://github.com/<GITHUB_USERNAME>/fastlane-plugin-gradle_properties"
+  spec.homepage      = "https://github.com/wakwak3125/fastlane-plugin-gradle_properties"
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"] + %w(README.md LICENSE)
